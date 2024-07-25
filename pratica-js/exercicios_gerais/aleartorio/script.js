@@ -1,0 +1,1 @@
+console.log (Math.random().toFixed(4) * 100)

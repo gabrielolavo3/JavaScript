@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: fade;
+    src: url(/font/InterFade.ttf);
+}
+
+@font-face {
+    font-family: giga;
+    src: url(/font/LTInternet-Bold.ttf);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.central {
+    display: flex;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    background: #FCFEFF;
+    overflow: hidden;
+}
+
+section .wave {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: url(/images/wave.png);
+    background-size: 1000px 100px;
+    animation: animate 10s linear infinite;
+    z-index: 1000;
+    opacity: 0.1;
+    animation-delay: 0%;
+    bottom: 0;
+    filter: opacity(0.4) drop-shadow(0 0 0 #9C2FCF);
+}
+
+section .wave.wave1 {
+    animation: animate 15s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0%;
+    bottom: 0;
+    filter: opacity(0.4) drop-shadow(0 0 0 #018ABE);
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+.legenda {
+    z-index: 1000;
+}
+
+h1 {
+    color: black(255, 255, 255);
+    font-family: giga;
+    font-size: 40px;
+    padding-right: 150px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.maps {
+    border-radius: 58px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 480px;
+    background: rgb(223, 223, 223);
+    box-shadow: -4px 4px 7px black;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.senai-b {
+    position: relative;
+}
+
+.Senai {
+    width: 350px;
+    height: 500px;
+}
+
+button {
+    display: flex;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    background: blue;
+    font-size: 10px;
+    text-align: center;
+    position: absolute;
+}
+
+#btA {
+    top: 170px;
+    left: 70px;
+}
+
+#btB {
+    top: 63px;
+    left: 140px;
+}
+
+#btC {
+    top: 143px;
+    left: 170px;
+}
+
+#btD {
+    top: 180px;
+    left: 206px;
+}
+
+#btE {
+    top: 250px;
+    left: 85px;
+}
+
+#btF {
+    top: 250px;
+    left: 127px;
+}
+
+#btG {
+    top: 250px;
+    left: 162px;
+}
+
+#btH {
+    top: 250px;
+    left: 223px;
+}
+
+#btI {
+    top: 253px;
+    left: 260px;
+}
+
+#btJ {
+    top: 330px;
+    left: 90px;
+}
+
+#btK {
+    top: 320px;
+    left: 170px;
+}
+
+#btL {
+    top: 319px;
+    left: 220px;
+}
+
+#btM {
+    top: 400px;
+    left: 90px;
+}
+
+#btN {
+    top: 380px;
+    left: 210px;
+}
+
+.central button {
+    background: #A8C0D0;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 5px 5px 15px #A8C0D0;
+    margin: 10px;
+
+
+
+}
+
+.central button:hover {
+    background: #3894D0;
+    color: white;
+}
+
+.fotos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 17px;
+    padding: 7px;
+}
+
+.div-caixa {
+
+    display: flex;
+    margin: 5px;
+    width: 360px;
+    align-items: center;
+    justify-content: center;
+    
+    gap: none;
+
+}
+
+.caixa-foto1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 36px;
+
+    width: 190px;
+    margin-left: 10px;
+    height: 150px;
+    background: rgb(223, 223, 223);
+    box-shadow: 0px 4px 7px black;
+}
+
+.caixa-foto2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 36px;
+
+    width: 150px;
+    margin-left: 10px;
+    height: 150px;
+
+    background: rgb(223, 223, 223);
+    box-shadow: 0px 4px 7px black;
+    
+}
+
+.caixa-foto3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 36px;
+    gap: 30px;
+    width: 350px;
+    margin: 5px;
+    height: 180px;
+
+    background: rgb(223, 223, 223);
+    box-shadow: 0px 4px 7px black;
+}
+
+
+#foto-1 {
+    margin: auto;
+    width: 165px;
+    height: 130px;
+    border-radius: 30px;
+}
+
+#foto-2 {
+    width: 125px;
+    height: 125px;
+    border-radius: 20px;
+
+}
+
+#foto-3 {
+    height: 150px;
+    width: 320px;
+    border-radius: 20px;
+}
